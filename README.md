@@ -2,24 +2,24 @@
 
 ## 📌 Project Overview
 
-Bu layihədə aviaşirkət uçuş məlumatları analiz edilmişdir. Məqsəd müxtəlif faktorların (aviaşirkət, uçuş sinfi, gün sayı, dayanacaqlar və s.) bilet qiymətlərinə təsirini araşdırmaqdır.
+In this project, airline flight data has been analyzed. The main objective is to explore how different factors (such as airline, travel class, days left until departure, number of stops, etc.) affect ticket prices.
 
 ## 📊 Dataset
 
-Layihədə istifadə olunan dataset aşağıdakı sütunlardan ibarətdir:
+The dataset used in this project includes the following columns:
 
-* `airline` — Aviaşirkətin adı
-* `source_city` — Çıxış şəhəri
-* `destination_city` — Təyinat şəhəri
-* `departure_time` — Uçuş vaxtı
-* `arrival_time` — Gəliş vaxtı
-* `class` — Uçuş sinfi (Economy / Business)
-* `duration` — Uçuş müddəti
-* `stops` — Dayanacaq sayı
-* `days_left` — Uçuşa qalan gün sayı
-* `price` — Bilet qiyməti
+* `airline` — Name of the airline
+* `source_city` — Departure city
+* `destination_city` — Destination city
+* `departure_time` — Departure time
+* `arrival_time` — Arrival time
+* `class` — Travel class (Economy / Business)
+* `duration` — Flight duration
+* `stops` — Number of stops
+* `days_left` — Days remaining until departure
+* `price` — Ticket price
 
-## 🛠️ İstifadə olunan texnologiyalar
+## 🛠️ Technologies Used
 
 * Python 🐍
 * Pandas 📊
@@ -27,51 +27,50 @@ Layihədə istifadə olunan dataset aşağıdakı sütunlardan ibarətdir:
 
 ## 🔍 Analysis Steps
 
-Layihədə aşağıdakı analizlər aparılmışdır:
+The following analyses were performed in this project:
 
-### 1. Aviaşirkət üzrə analiz
+### 1. Airline Analysis
 
-* Hər aviaşirkətin uçuş sayı
-* Orta bilet qiymətləri
-* Ən bahalı və ən ucuz şirkətlər
+* Number of flights per airline
+* Average ticket prices
+* Most expensive and cheapest airlines
 
-### 2. Sinif (Class) üzrə analiz
+### 2. Class Analysis
 
-* Economy və Business siniflərinin qiymət fərqi
-* Siniflər üzrə orta uçuş müddəti
+* Price differences between Economy and Business classes
+* Average flight duration by class
 
-### 3. Şəhərlər üzrə analiz
+### 3. City-Based Analysis
 
-* Mənbə və təyinat şəhərlərinə görə orta qiymətlər
-* Ən çox uçuş olan şəhər
+* Average prices based on source and destination cities
+* Most frequent cities in the dataset
 
-### 4. Gün faktorunun təsiri
+### 4. Impact of Days Left
 
-* `days_left` dəyişəninə görə qiymət dəyişimi
-* Az qalan günlərdə qiymət artımı müşahidəsi
+* Price changes based on `days_left`
+* Observation of price increases as departure date approaches
 
-### 5. Dayanacaqların təsiri
+### 5. Stops Analysis
 
-* Stops sayına görə qiymət və müddət analizi
+* Relationship between number of stops and price/duration
 
-### 6. Qruplaşdırma
+### 6. Grouping
 
-* Günlər intervala bölünərək (`0-10`, `11-20`, və s.) analiz edilmişdir
+* Days were grouped into intervals (`0-10`, `11-20`, etc.) for deeper analysis
 
 ## 📈 Key Insights
 
-* Uçuşa az gün qaldıqca qiymətlər artır 📈
-* Business class biletlər Economy-dən xeyli bahadır 💸
-* Daha çox dayanacaq olan uçuşlar adətən daha ucuzdur
-* Aviaşirkətlər arasında ciddi qiymət fərqləri mövcuddur
+* Ticket prices increase as the departure date approaches 📈
+* Business class tickets are significantly more expensive than Economy 💸
+* Flights with more stops are generally cheaper
+* There are noticeable price differences between airlines
 
-## 📌 Nəticə
+## 📌 Conclusion
 
-Bu layihə göstərir ki, uçuş qiymətləri bir çox faktordan asılıdır və düzgün analiz vasitəsilə bu faktorları aşkar etmək mümkündür.
+This project demonstrates that flight ticket prices depend on multiple factors, and through proper data analysis, these factors can be identified and understood.
 
 ---
 
 ## 👤 Author
 
 Yaqub Rafiyev
-
